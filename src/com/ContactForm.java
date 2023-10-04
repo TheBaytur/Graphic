@@ -13,5 +13,17 @@ public class ContactForm extends JFrame {
         Container container = super.getContentPane();
         container.setLayout(new GridLayout(3,2,2,2));
 
+        JLabel name = new JLabel("Write your name:");
+        JTextField name_field = new JTextField("", 1);
+        JLabel email = new JLabel("Write your email:");
+        JTextField email_field = new JTextField("@", 1);
+
+        container.add(name);
+        container.add(name_field);
+        container.add(email);
+        container.add(email_field);
+
+
+
     }
 }
