@@ -23,6 +23,21 @@ public class ContactForm extends JFrame {
         container.add(email);
         container.add(email_field);
 
+        JRadioButton male = new JRadioButton("Male");
+        JRadioButton female = new JRadioButton("Female");
+        JCheckBox check = new JCheckBox("Agree?", false);
+        JButton send_button = new JButton("Send");
+
+        male.setSelected(true);
+        container.add(male);
+        container.add(female);
+
+        ButtonGroup group = new ButtonGroup();
+        group.add(male);
+        group.add(female);
+
+        container.add(check);
+        container.add(send_button);
 
 
     }
